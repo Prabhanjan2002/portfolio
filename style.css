@@ -20,10 +20,19 @@ header {
   padding: 33px 9%;
   background: transparent;
 }
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
 .welcome {
   font-size: 30px;
   color: aliceblue;
   font-weight: 700;
+}
+header.sticky #menu-icon,
+header.sticky h1,
+header.sticky ul li a {
+  color: #000;
 }
 .navlist {
   display: flex;
@@ -54,11 +63,35 @@ header {
   gap: 2rem;
 }
 
-.home-text {
+/* .home-text {
   color: aliceblue;
+} */
+.home-text-box {
+  z-index: 222;
+  color: white;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 700px;
+  border: 5px solid rgb(240, 242, 245);
+  border-radius: 30px;
+  transform: translate(-80px, 50px);
+  margin-bottom: 140px;
+}
+.home-img {
+  margin-bottom: 70px;
+}
+.home-img img {
+  width: 400px;
+  clip-path: circle();
+  border-radius: 50%;
+  border: 7px solid rgb(119, 106, 113);
 }
 section {
+  top: 100px;
   padding: 0 19%;
+  position: relative;
 }
 @media (max-width: 1535px) {
   header {
@@ -77,11 +110,11 @@ section {
     width: 100%;
     height: auto;
   }
-  .home-text h1 {
+  .home-text-box-t h1 {
     font-size: 50px;
     margin: 0 0 30px;
   }
-  .home-text h3 {
+  .home-text-box-t h3 {
     font-size: 25px;
   }
 }
@@ -97,9 +130,24 @@ section {
   .home-img {
     text-align: center;
   }
-  .home-text {
+  /* .home-text {
     padding-top: 115px;
+  } */
+  .home-text-box {
+    padding-top: 115px;
+    margin-left: 230px;
   }
+  /* .home-text-box-t{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .home-text-box h1 {
+    font-size: 50px;
+    margin: 0 0 30px;
+  }
+  .home-text-box h3 {
+    font-size: 25px;
+  } */
   .home {
     height: 100%;
     gap: 1rem;
