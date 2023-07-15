@@ -3,12 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY PF</title>
+    <title>PF_4</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="media.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -16,52 +13,57 @@
   </head>
   <body>
     <header>
-      <h1 class="welcome">Hi Everyone</h1>
-      <ul class="navlist">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Skills</a></li>
-      </ul>
-      <div class="bx bx-menu" id="menu-icon"></div>
+      <nav class="navbar">
+        <a href="#" class="nav-branding">P.mishra</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <div class="bx bx-menu-alt-right"></div>
+        </div>
+      </nav>
     </header>
-
-    <section class="home">
-      <!-- <div class="home-text">
-        <h3>Myself</h3>
-        <h1>PRABHANJAN MISHRA</h1>
-        <br />
-        <p>
-          I am motivated and driven to pursue a career in computer science, and
-          I am confident that the program will provide me with the foundation I
-          need to achieve my goals. I am eager to apply my passion and
-          dedication to the field, and I am confident that I will make a
-          valuable contribution to the university community
-        </p>
-      </div> -->
-      <div class="home-text-box">
-        <div class="home-text-box-t">
-          <h3>Myself</h3>
-          <h1>PRABHANJAN MISHRA</h1>
-          <br />
-          <p>
-            I am motivated and driven to pursue a career in computer science,
-            and I am confident that the program will provide me with the
-            foundation I need to achieve my goals. I am eager to apply my
-            passion and dedication to the field, and I am confident that I will
-            make a valuable contribution to the university community
-          </p>
+    <section id="profile">
+      <div class="section_pic">
+        <img src="person.jpg" alt="profile picture" id="img" />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello I'm</p>
+        <h1 class="section_title">Prabhanjan Mishra</h1>
+        <p class="section_text_p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('121cs0967.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+            Contact Me
+          </button>
+        </div>
+        <div id="social-container">
+          <div
+            class="bx bxl-linkedin-square"
+            id="icon"
+            onclick="location.href='https://linkedin.com/'"
+          ></div>
+          <div
+            class="bx bxl-github"
+            id="icon"
+            onclick="location.href='https://github.com/'"
+          ></div>
         </div>
       </div>
-
-      <!-- <div class="home-img">
-        <img src="img1.png" alt="profile_pic" height="500px" width="500px" />
-      </div> -->
-      <div class="home-img">
-        <img src="person.jpg" alt="profile_pic" />
-      </div>
     </section>
-
     <script src="script.js"></script>
   </body>
 </html>
