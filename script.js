@@ -1,13 +1,7 @@
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navlist.classList.toggle("open");
-};
-
-window.addEventListener("scroll", function () {
-  var header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 });
-
