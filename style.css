@@ -26,16 +26,14 @@ a {
 }
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 60px;
 }
 
 .nav-item {
-  background-color: rgb(133, 179, 210);
-  /* color: rgb(46, 109, 165); */
+  background-color: rgb(117, 113, 113);
   border-style: inset;
-  /* border-color: black; */
   padding: 0 2%;
 }
 .nav-link:hover {
@@ -48,11 +46,11 @@ a {
 }
 .nav-link {
   transition: 0.7s ease;
-  color: aliceblue;
+  color: rgb(228, 232, 236);
 }
-.nav-link:hover {
+/* .nav-link:hover {
   column-rule-color: black;
-}
+} */
 .hamburger {
   display: none;
   cursor: pointer;
